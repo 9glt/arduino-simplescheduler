@@ -13,7 +13,7 @@ struct Node {
 struct Node *mylist;
 
 
-void schedule_run() {
+void scheduler_run() {
     struct Node *n = mylist;
     while(n) {
         if(millis() - n->millis >= n->time) {
