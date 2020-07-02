@@ -1,4 +1,4 @@
-#inclide <stdlib.h>
+#include <stdlib.h>
 
 typedef void(*func_t)();
 
