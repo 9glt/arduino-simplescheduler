@@ -1,0 +1,18 @@
+{
+    "name": "SimpleScheduler",
+    "keywords": "scheduler",
+    "description": "Arduino library for scheduling jobs without using delay",
+    "authors":
+    {
+        "name": "Mindaugas Žvirblis",
+        "email": "mz@9g.lt",
+        "url": "https://github.com/sponsors/blinkinglight/"
+    },
+    "repository":
+    {
+        "type": "git",
+        "url": "https://github.com/9glt/arduino-simplescheduler"
+    },
+    "frameworks": "arduino",
+    "platforms": "atmelavr"
+}
