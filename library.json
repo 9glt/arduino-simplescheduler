@@ -1,6 +1,7 @@
 {
     "name": "SimpleScheduler",
     "keywords": "scheduler",
+    "version": "0.1",
     "description": "Arduino library for scheduling jobs without using delay",
     "authors":
     {
