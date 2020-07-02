@@ -1,10 +1,10 @@
 #include <stdlib.h>
 
+typedef void(*func_t)();
 void __delete(struct Node **, struct Node *);
 void schedule_run();
 void schedule(unsigned long , func_t);
 
-typedef void(*func_t)();
 
 struct Node {
     unsigned long time;
