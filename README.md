@@ -24,6 +24,6 @@ void setup() {
 }
 
 void loop() {
-  scheduler_run();
+  schedule_run();
 }
 ```
