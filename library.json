@@ -15,5 +15,5 @@
         "url": "https://github.com/9glt/arduino-simplescheduler.git"
     },
     "frameworks": "arduino",
-    "platforms": "atmelavr"
+    "platforms": "*"
 }
