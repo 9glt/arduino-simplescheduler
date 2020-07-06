@@ -27,6 +27,11 @@ void __append(Node** head_ref, unsigned long t, unsigned long m, void (*fn)() )
 }
 
 struct Node *mylist;
+struct Node *microslist;
+
+void scheduler_run() {
+  schedule_run();
+}
 
 void schedule_run() {
     Node *head = mylist;
@@ -39,8 +44,30 @@ void schedule_run() {
     }
 }
 
+
+
+void scheduler_run_micros() {
+  schedule_run_micros();
+}
+
+void schedule_run_micros() {
+    Node *head = microslist;
+    while(head != NULL) {
+        if(micros() - head->millis >= head->time) {
+            head->fn();
+             __delete(&microslist, head);
+        } 
+        head = head->next;
+    }
+}
+
+
 void schedule(unsigned long dl, func_t fn) {
     __append(&mylist, dl, millis(), fn);
+}
+
+void schedule_micros(unsigned long dl, func_t fn) {
+    __append(&microslist, dl, micros(), fn);
 }
 
 int __delete(struct Node **mainlist, struct Node *item)  {

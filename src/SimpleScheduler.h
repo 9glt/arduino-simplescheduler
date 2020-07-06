@@ -10,6 +10,11 @@ struct Node {
 
 void __append(struct Node**, unsigned long , unsigned long , void(*)() );
 int __delete(struct Node **, struct Node *);
-void schedule_run();
-void schedule(unsigned long , func_t);
 
+void schedule(unsigned long , func_t);
+void schedule_run();
+void scheduler_run();
+
+void schedule_micros(unsigned long , func_t);
+void schedule_run_micros();
+void scheduler_run_micros();
