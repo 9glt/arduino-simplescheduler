@@ -5,7 +5,7 @@ void ledOff();
 
 void ledOn() {
   digitalWrite(LED_BUILTIN, HIGH);
-  schedule(300, ledOff); // turn off after 500ms
+  schedule(300, ledOff); // turn off after 300ms
 }
 void ledOff() {
   digitalWrite(LED_BUILTIN, LOW);
